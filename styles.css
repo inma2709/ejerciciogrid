@@ -1,0 +1,65 @@
+.galeria{
+    /* Convierte la sección en una cuadrícula para ordenar las seis tarjetas. */
+    display: grid;
+    /* Crea tantas columnas como quepan; cada tarjeta mide al menos 200 px. */
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*crea tres columnas de igual tamaño. */
+    grid-template-columns: repeat(3, 1fr);
+     /* Separa las tarjetas de forma uniforme. */
+    border: 1px solid black;
+    gap: 1rem;
+    padding: 1rem;
+    margin:1rem;  
+   
+   
+}
+
+.tarjeta{
+    /* Convierte la tarjeta en un contenedor flex para centrar su contenido. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 1rem;
+    border: 1px solid rgb(195, 11, 88);
+   
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  
+}
+
+
+.mi-navbar{
+    background-color: #da1d92;
+    color: white;
+}
+
+.btn-primary{
+    margin: 1rem;
+    background-color: #da1d92;
+    border-color: #da1d92;
+}
+
+.text-center{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.col{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+/* medias queries */
+
+@media (max-width: 650px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
